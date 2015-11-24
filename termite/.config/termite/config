@@ -1,0 +1,150 @@
+[options]
+resize_grip = false
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = true
+modify_other_keys = true
+mouse_autohide = true
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+cursor_blink = off
+cursor_shape = block
+scrollback_lines = 100000
+search_wrap = true
+browser = firefox
+#icon_name = terminal
+#geometry = 640x480
+
+#font = CMU Typewriter Text 12.5
+#font = DejaVu Sans Mono 10
+#font = LetterGothic 12
+#font = Inconsolatazi4 12
+#font = Monaco 10
+#font = Latin Modern Mono 11
+#font = Perfect DOS VGA 437 12
+#font = Meslo LG S 10
+#font = Dina 9
+#font = Fira Mono 10.5
+font = Source Code Pro Medium 9
+
+[colors]
+# Base16 Ocean
+# Scheme = Chris Kempson (http://chriskempson.com)
+
+foreground      = #c0c5ce
+foreground_bold = #c0c5ce
+cursor          = #c0c5ce
+#background      = #2b303b
+#foreground       = #
+background       = #0f0f0f
+# 16 color space
+#color0  = #2b303b
+#color1  = #bf616a
+#color2  = #a3be8c
+#color3  = #ebcb8b
+#color4  = #8fa1b3
+#color5  = #b48ead
+#color6  = #96b5b4
+#color7  = #c0c5ce
+#color8  = #65737e
+#color9  = #bf616a
+#color10 = #a3be8c
+#color11 = #ebcb8b
+#color12 = #8fa1b3
+#color13 = #b48ead
+#color14 = #96b5b4
+#color15 = #eff1f5
+
+# 256 color space
+#color16 = #d08770
+#color17 = #ab7967
+#color18 = #343d46
+#color19 = #4f5b66
+#color20 = #a7adba
+#color21 = #dfe1e8
+
+# solarized
+#foreground      = #839496
+#background      = #002b36
+#foreground_bold = #93a1a1
+#cursor          = #93a1a1
+
+#color0  = #073642
+#color1  = #dc322f
+#color2  = #859900
+#color3  = #b58900
+#color4  = #268bd2
+#color5  = #d33682
+#color6  = #2aa198
+#color7  = #eee8d5
+#color8  = #002b36
+#color9  = #cb4b16
+#color10 = #586e75
+#color11 = #657b83
+#color12 = #839496
+#color13 = #6c71c4
+#color14 = #93a1a1
+#color15 = #fdf6e3
+
+# alexcol
+# black
+color0 = #090909
+
+# bright_black
+color8 = #1e1e1e
+
+# red
+color1 = #85372a
+
+# bright_red
+color9 = #dc8f82
+
+# green
+color2 = #429b09
+
+# bright_green
+color10 = #9af262
+
+# yellow
+color3 = #857a09
+
+# bright_yellow
+color11 = #dcd162
+
+# blue
+color4 = #20586e
+
+# bright_blue
+color12 = #79b0c4
+
+# magenta
+color5 = #64376e
+
+# bright_magenta
+color13 = #bb8fc4
+
+# cyan
+color6 = #209b4c
+
+# bright_cyan
+color14 = #79f2a3
+
+# white
+color7 = #989898
+
+# bright_white
+color15 = #ffffff
+
+
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+padding = 2
+#border = #3f3f3f
+#border_width = 1.5
+#roundness = 2.0
+
