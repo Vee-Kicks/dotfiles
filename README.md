@@ -1,1 +1,2 @@
-My dotfiles using stow as a manager.
+# dotfiles 
+# using stow to manage local files
