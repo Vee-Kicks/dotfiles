@@ -28,7 +28,7 @@ else
   set undofile		" keep an undo file (undo changes after closing)
 endif
 
-" Set directories, keep stuff tidy.        
+" Some directories to keep stuff tidy and backed up.        
 set undodir=~/.cache/vim/undo
 set directory=~/.cache/vim/swap
 set backupdir=~/.cache/vim/backup
