@@ -7,7 +7,7 @@
 
 # my stuff
 export LANG=en_GB.UTF-8
-export TERM=rxvt-unicode
+export TERM=termite
 
 
 

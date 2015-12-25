@@ -70,6 +70,10 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
   set tabstop=4
+ " when indenting with '>', use 4 spaces width
+  set shiftwidth=4
+ " On pressing tab, insert 4 spaces
+  set expandtab
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
