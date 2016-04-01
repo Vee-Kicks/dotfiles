@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="xiong-chiamiov-plus"
+ZSH_THEME="xiong"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +53,7 @@ plugins=(git)
 
 # User configuration
 
-#export PATH="/usr/share/applications:/home/alexi/bin:usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+# export PATH=$HOME/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,20 +84,23 @@ export LANG=en_GB.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #########
-#########
-
-#alias less=$PAGER
+PATH=$PATH:$HOME/bin/
+export PATH
+#source /usr/local/bin/zurl.zsh
+setopt HIST_IGNORE_DUPS
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 alias dpaste='curl -s -F "content=<-" http://dpaste.com/api/v2/'
 # cmd | pb for usual, pb < file for jpg etc.
 alias pb="curl -F c=@- https://ptpb.pw"
 alias spm="sudo pacman"
 alias pm="pacman"
-
 export VISUAL=vim
 export EDITOR="$VISUAL"
 #export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 export LESS='-R '
-# coloured manuals
+# coloured man pages
 man() {
   env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \
@@ -111,3 +114,4 @@ man() {
 }
 # colored list
 eval $(dircolors -b $HOME/.dircolors)
+alias l='ls -l'

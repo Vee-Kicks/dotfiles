@@ -9,6 +9,10 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
+" Manage 'runtimepath' and ease plugin installation.
+" For details see  https://github.com/tpope/vim-pathogen.git
+execute pathogen#infect()
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -121,9 +125,6 @@ set t_Co=256
 vmap <C-c> :<Esc>`>a<CR><Esc>mx`<i<CR><Esc>my'xk$v'y!xclip -selection c<CR>u
 map <Insert> :set paste<CR>i<CR><CR><Esc>k:.!xclip -o<CR>JxkJx:set nopaste<CR> 
 
-" Manage 'runtimepath' and ease plugin installation.
-" For details see  https://github.com/tpope/vim-pathogen.git
-execute pathogen#infect()
 syntax on
 " Solarized colour settings git://github.com/altercation/vim-colors-solarized.git
 " Background light or dark.
@@ -134,5 +135,7 @@ colorscheme solarized
 set number
 " Spelling on
 " set spell
-
+"
+" saner quit no save.
+map QQ ZQ
 
